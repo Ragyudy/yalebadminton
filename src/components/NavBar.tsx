@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const CustomNavbar = styled(Navbar)`
   position: fixed;
@@ -20,10 +21,18 @@ function NavBar() {
         <CenteredNav>
           <Navbar.Toggle />
           <Navbar.Collapse>
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/Team">Team</Nav.Link>
-            <Nav.Link href="/Gallery">Gallery</Nav.Link>
-            <Nav.Link href="/Contact">Contact</Nav.Link>
+            <Nav.Link as={Link} to="/">
+              Home
+            </Nav.Link>
+            <Nav.Link as={Link} to="/Team">
+              Team
+            </Nav.Link>
+            <Nav.Link as={Link} to="/Gallery">
+              Gallery
+            </Nav.Link>
+            <Nav.Link as={Link} to="/Faq">
+              FAQ
+            </Nav.Link>
           </Navbar.Collapse>
         </CenteredNav>
       </Container>

@@ -1134,6 +1134,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bootstrap-icons@npm:^1.11.3":
+  version: 1.11.3
+  resolution: "bootstrap-icons@npm:1.11.3"
+  checksum: d5cdb90fe37af9051f369cbced8aa25bde9c29895f6ab47cbadcfdca71ae5b49093fceb4261c910a84d4352a5a4f998fdae4f1c245897bc6a1042321f4380c07
+  languageName: node
+  linkType: hard
+
 "bootstrap@npm:^5.3.3":
   version: 5.3.3
   resolution: "bootstrap@npm:5.3.3"
@@ -2600,7 +2607,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.2, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -2622,6 +2629,17 @@ __metadata:
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
   checksum: b676f8c040cdc5b12723ad2f91414d267605b26419d5c821ff03befa817ddd10e238d22b25d604920340fd73efd8ba795465a0377c4adf45a4a41e4234e42dc4
+  languageName: node
+  linkType: hard
+
+"react-bootstrap-icons@npm:^1.11.4":
+  version: 1.11.4
+  resolution: "react-bootstrap-icons@npm:1.11.4"
+  dependencies:
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: ">=16.8.6"
+  checksum: 3b3a67bbbc72354d239519f12fef880ec88981ce51c9c2f3c14740ad7e1bab702308fd7e29297a2ab92abae9ee45c6e0fa615abdad5a20912c32c05f718c8c87
   languageName: node
   linkType: hard
 
@@ -3335,12 +3353,14 @@ __metadata:
     "@types/react-dom": ^18.3.0
     "@vitejs/plugin-react": ^4.3.1
     bootstrap: ^5.3.3
+    bootstrap-icons: ^1.11.3
     eslint: ^9.9.0
     eslint-plugin-react-hooks: ^5.1.0-rc.0
     eslint-plugin-react-refresh: ^0.4.9
     globals: ^15.9.0
     react: ^18.3.1
     react-bootstrap: ^2.10.4
+    react-bootstrap-icons: ^1.11.4
     react-dom: ^18.3.1
     react-icons: ^5.3.0
     react-router-dom: ^6.26.1

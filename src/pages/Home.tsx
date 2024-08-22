@@ -1,6 +1,9 @@
 import Container from "react-bootstrap/Container";
 import styled, { keyframes } from "styled-components";
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import MediaLinks from "../components/MediaLinks";
 
 // Define fade-in animation
 const fadeIn = keyframes`
@@ -48,12 +51,14 @@ const Title = styled.h1`
     color: #286dc0;
   }
 
+  // tablet
   @media (max-width: 768px) {
-    font-size: 3rem; /* Smaller font size for tablets */
+    font-size: 3rem;
   }
 
+  // mobile
   @media (max-width: 576px) {
-    font-size: 2.5rem; /* Even smaller font size for mobile */
+    font-size: 2.5rem;
   }
 `;
 
@@ -66,17 +71,19 @@ const Subtitle = styled.h2`
     color: #63aaff;
   }
 
+  // tablet
   @media (max-width: 768px) {
-    font-size: 1.5rem; /* Smaller font size for tablets */
+    font-size: 1.5rem;
   }
 
+  // mobile
   @media (max-width: 576px) {
-    font-size: 1.25rem; /* Even smaller font size for mobile */
+    font-size: 1.25rem;
   }
 `;
 
 const AboutSection = styled.section`
-  padding: 4rem 2rem;
+  padding: 1rem 2rem;
   width: 100%;
   text-align: center;
   opacity: 0; /* Start invisible */
@@ -86,12 +93,14 @@ const AboutSection = styled.section`
     animation: ${fadeIn} 1s ease-in-out;
   }
 
+  // tablet
   @media (max-width: 768px) {
-    padding: 3rem 1.5rem; /* Adjust padding for tablets */
+    padding: 3rem 1.5rem;
   }
 
+  // mobile
   @media (max-width: 576px) {
-    padding: 2rem 1rem; /* Adjust padding for mobile */
+    padding: 2rem 1rem;
   }
 `;
 
@@ -100,12 +109,14 @@ const AboutTitle = styled.h3`
   color: #00356b;
   margin-bottom: 1rem;
 
+  // tablet
   @media (max-width: 768px) {
-    font-size: 2.5rem; /* Smaller font size for tablets */
+    font-size: 2.5rem;
   }
 
+  // mobile
   @media (max-width: 576px) {
-    font-size: 2rem; /* Even smaller font size for mobile */
+    font-size: 2rem;
   }
 `;
 
@@ -115,12 +126,14 @@ const AboutText = styled.p`
   max-width: 800px;
   margin: 0 auto;
 
+  // tablet
   @media (max-width: 768px) {
-    font-size: 1rem; /* Smaller font size for tablets */
+    font-size: 1rem;
   }
 
+  // mobile
   @media (max-width: 576px) {
-    font-size: 0.875rem; /* Even smaller font size for mobile */
+    font-size: 0.875rem;
   }
 `;
 
@@ -138,13 +151,14 @@ const LinksContainer = styled.div`
       color: #00356b;
     }
   }
-
+  // tablet
   @media (max-width: 768px) {
-    font-size: 1rem; /* Smaller font size for tablets */
+    font-size: 1rem;
   }
 
+  // mobile
   @media (max-width: 576px) {
-    font-size: 0.875rem; /* Even smaller font size for mobile */
+    font-size: 0.875rem;
   }
 `;
 
@@ -194,10 +208,11 @@ function Home() {
           there should be open court times that are posted on the PWG website.
         </AboutText>
         <LinksContainer>
-          <a href="/Team">Team</a>
-          <a href="/Gallery">Gallery</a>
-          <a href="/Contact">Contact</a>
+          <Link to="/Team">Team</Link>
+          <Link to="/Gallery">Gallery</Link>
+          <Link to="/Faq">FAQ</Link>
         </LinksContainer>
+        <MediaLinks />
       </AboutSection>
     </StyledContainer>
   );
