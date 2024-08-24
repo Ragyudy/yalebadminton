@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const CustomNavbar = styled(Navbar)`
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 100;
 `;
@@ -16,24 +16,24 @@ const CenteredNav = styled(Nav)`
 
 function NavBar() {
   return (
-    <CustomNavbar expand="sm">
+    <CustomNavbar>
       <Container>
         <CenteredNav>
-          <Navbar.Toggle />
-          <Navbar.Collapse>
-            <Nav.Link as={Link} to="/">
-              Home
-            </Nav.Link>
-            <Nav.Link as={Link} to="/Team">
-              Team
-            </Nav.Link>
-            <Nav.Link as={Link} to="/Gallery">
-              Gallery
-            </Nav.Link>
-            <Nav.Link as={Link} to="/Faq">
-              FAQ
-            </Nav.Link>
-          </Navbar.Collapse>
+          {/* <Navbar.Toggle /> */}
+          {/* <Navbar.Collapse> */}
+          <Nav.Link as={Link} to="/">
+            Home
+          </Nav.Link>
+          <Nav.Link as={Link} to="/Team">
+            Team
+          </Nav.Link>
+          <Nav.Link as={Link} to="/Gallery">
+            Gallery
+          </Nav.Link>
+          <Nav.Link as={Link} to="/Faq">
+            FAQ
+          </Nav.Link>
+          {/* </Navbar.Collapse> */}
         </CenteredNav>
       </Container>
     </CustomNavbar>
