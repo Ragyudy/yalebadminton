@@ -1,13 +1,28 @@
 import Container from "react-bootstrap/Container";
 import NavBar from "../components/NavBar";
+import styled from "styled-components";
+
+const Title = styled.h1`
+  text-align: center;
+`;
+
+const Note = styled.p`
+  text-align: center;
+  color: #00356b;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #286dc0;
+  }
+`;
 
 function Team() {
   return (
     <>
       <NavBar />
       <Container style={{ paddingTop: "10vh" }}>
-        <h1>Meet the Team</h1>
-        <p>under construction</p>
+        <Title>Meet the Team</Title>
+        <Note>coming soon...</Note>
       </Container>
     </>
   );
