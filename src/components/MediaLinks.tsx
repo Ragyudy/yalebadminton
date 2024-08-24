@@ -47,7 +47,10 @@ function MediaLinks() {
       <a href="https://twitter.com/yalebc" className="twitter">
         <Twitter />
       </a>
-      <Link to="/coming-soon" className="youtube">
+      <Link
+        to="https://www.youtube.com/user/yalebadmintonclub"
+        className="youtube"
+      >
         <Youtube />
       </Link>
     </SocialMediaIcons>

@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'brandon-grotesque', 'Oswald', sans-serif;
-    font-weight: 700;
+    font-weight: 501;
   }
 
   p, span, li {
