@@ -1,3 +1,6 @@
-# Yale Badminton's (Un)official Website
+# Yale Badminton's Official Website
 
-Started this on the metro north from NH to NY because I had nothing better to do. Also because our official website is old lol. This website was made with React + Typescript + Vite.
+Our last official website was kinda old and I didn't know what else to do on the metro-north, so I made this :) Still unfinished, but I try to work on it whenever I have time! Hopefuly the next time I update the readme, the website will be done ;-;
+-Grady
+
+This website was made with React + Typescript + Vite.
