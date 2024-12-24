@@ -1,3 +1,3 @@
 # yalebadminton.com
 
-(un)officially, undisputedly the best college badminton club ever
+(un)officially, undisputedly the best collegiate badminton club ever
