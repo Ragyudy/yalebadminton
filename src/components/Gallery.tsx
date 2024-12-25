@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { LazyImage } from "./LazyImage";
 
 export function Gallery() {
   const items = {
@@ -7,6 +8,11 @@ export function Gallery() {
         id: "2024-25/fall-tournament",
         thumbnail: "2024-25/fall-2024-tournament",
         caption: "Fall Tournament",
+      },
+      {
+        id: "2024-25/off-the-court",
+        thumbnail: "2024-25/off-the-court-2024-25",
+        caption: "Social Events",
       },
     ],
     "2023-24": [
@@ -21,8 +27,8 @@ export function Gallery() {
         caption: "Spring Tournament",
       },
       {
-        id: "2023-24/social-events",
-        thumbnail: "2023-24/social-events-2023-24",
+        id: "2023-24/off-the-court",
+        thumbnail: "2023-24/off-the-court-2023-24",
         caption: "Social Events",
       },
     ],
@@ -47,10 +53,9 @@ export function Gallery() {
             {data.map((item) => (
               <Link to={`${item.id}`} key={item.id}>
                 <div className="gallery-item">
-                  <img
+                  <LazyImage
                     src={`src/assets/img/gallery/thumbnails/${item.thumbnail}.jpg`}
                     alt={item.caption}
-                    loading="lazy"
                   />
                   <caption>{item.caption}</caption>
                 </div>

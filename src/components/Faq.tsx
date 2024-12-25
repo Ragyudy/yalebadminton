@@ -15,13 +15,13 @@ const faqData = [
     id: 3,
     question: "What equipment do I need (for tryouts)? ",
     answer:
-      "Bring a racket (if you have), sneakers, and water. If you don't have your own racket, our members are usually kind enough to lend their own. If you have a member's racket, please remember to treat it with care and respect as they can cost anywhere from $120-$220 😩. We provide shuttlecocks.",
+      "Bring a racket (if you have), sneakers, and water. If you don't have your own racket, our members are usually kind enough to lend their own. If you have a member's racket, please remember to treat it with care and respect as they can cost anywhere from $120-$220 😩 💸. We provide shuttlecocks.",
   },
   {
     id: 4,
     question: "Can I join as a beginner?",
     answer:
-      "It doesn't hurt to try out! We prioritize experienced players due to limited space and resources. We recommend playing in open gym to improve your skills before trying out :)",
+      "It doesn't hurt to try out, but we prioritize experienced players due to limited space and resources. We recommend playing in open gym to improve your skills before trying out!",
   },
 ];
 

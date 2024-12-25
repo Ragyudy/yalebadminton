@@ -142,6 +142,10 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .navbar-container {
+    position: absolute;
+  }
+
   .navbar-right-big-screen {
     display: none;
   }
@@ -271,6 +275,12 @@ h2 {
   font-size: 3rem;
   margin: 0;
   color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  .splash-overlay h1 {
+    font-size: 2.25rem;
+  }
 }
 
 .about {

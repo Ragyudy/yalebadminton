@@ -1,3 +1,5 @@
+import { LazyImage } from "./LazyImage";
+
 interface ImageDetails {
   path: string; // path to the image
   title?: string; // optional title for the image
@@ -18,11 +20,10 @@ export function MasonryGrid({ title, date, images }: MasonryGridProps) {
         <div className="columns-1 sm:columns-2 lg:columns-3 py-8 md:py-8 gap-4">
           {images.map((image, index) => (
             <div key={index} className="mb-4 break-inside-avoid">
-              <img
+              <LazyImage
+                key={index}
                 src={image.path}
-                loading="lazy"
                 alt={image.title || `Image ${index + 1}`}
-                className="w-full object-cover"
               />
               {image.title && (
                 <p className="mt-2 text-center text-gray-700">{image.title}</p>

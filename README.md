@@ -8,6 +8,4 @@ todo:
 - make team page
 - make archive pages
 - update home page
-- make gallery pages load more smoothly
-- select photos for galleries
 - dark mode
