@@ -59,9 +59,14 @@ export function Home() {
       >
         <h2>About Us</h2>
         <p>
-          Yale Club Badminton is a student-led organization that fosters
-          competitive and recreational badminton. We organize team practices,
-          tournaments, and open gym sessions to cater to players of all levels.
+          We consist of competitive Yale undergraduate and graduate players and
+          participate in away tournaments every semester and we recruit new
+          players at the start of each semester. If you’re a new student
+          interested in representing Yale Badminton, please reach out to{" "}
+          <a href="mailto:aadi.krishna@yale.edu">aadi.krishna@yale.edu</a>,{" "}
+          <a href="mailto:ella.xu@yale.edu">ella.xu@yale.edu</a>, and{" "}
+          <a href="mailto:grady.yu@yale.edu">grady.yu@yale.edu</a>. We’d love to
+          talk to you :D!
         </p>
       </motion.div>
 

@@ -48,7 +48,7 @@ export function Header() {
                         {
                           label: "Past Teams",
                           description: "View a gallery of past team members.",
-                          to: "/old-members",
+                          to: "/past-teams",
                         },
                         {
                           label: "Constitution",

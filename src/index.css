@@ -284,9 +284,10 @@ h2 {
 }
 
 .about {
+  max-width: 1000px;
   text-align: center;
-  margin: 40px 0;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 .about h2 {
@@ -295,10 +296,19 @@ h2 {
 }
 
 .about p {
-  max-width: 800px;
   margin: 0 auto;
   text-align: left;
   font-size: 1rem;
+  line-height: 1.8;
+}
+
+.about a {
+  color: #286dc0;
+  text-decoration: none;
+}
+
+.about a:hover {
+  text-decoration: underline;
 }
 
 .club-vs-open-gym {

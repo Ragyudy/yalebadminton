@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Faq } from "./components/Faq";
 import { Gallery } from "./components/Gallery";
 import { MasonryGrid } from "./components/MasonryGrid";
+import { ComingSoon } from "./components/ComingSoon";
 
 function App() {
   useEffect(() => {
@@ -115,6 +116,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/team" element={<ComingSoon />} />
         <Route path="/gallery" element={<Gallery />} />
         {Object.entries(galleries).map(([path, data]) => (
           <Route
@@ -130,6 +132,8 @@ function App() {
           />
         ))}
         <Route path="/faq" element={<Faq />} />
+        <Route path="/past-teams" element={<ComingSoon />} />
+        <Route path="/constitution" element={<ComingSoon />} />
       </Routes>
     </Router>
   );
