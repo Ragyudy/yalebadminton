@@ -6,6 +6,7 @@ import { Faq } from "./components/Faq";
 import { Gallery } from "./components/Gallery";
 import { MasonryGrid } from "./components/MasonryGrid";
 import { ComingSoon } from "./components/ComingSoon";
+import { Footer } from "./components/Footer";
 
 function App() {
   useEffect(() => {
@@ -135,6 +136,7 @@ function App() {
         <Route path="/past-teams" element={<ComingSoon />} />
         <Route path="/constitution" element={<ComingSoon />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
