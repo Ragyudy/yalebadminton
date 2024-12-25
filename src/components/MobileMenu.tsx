@@ -1,7 +1,8 @@
+import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -12,12 +13,17 @@ export function MobileMenu() {
   return (
     <Sheet>
       <SheetTrigger>
-        <Menu />
+        <Button variant="ghost" size="icon">
+          <Menu size={24} />
+        </Button>
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
-          <SheetTitle> HI </SheetTitle>
-          <SheetDescription>This is my first sheet everrr</SheetDescription>
+          <SheetTitle>
+            <Link to="/" className="logo">
+              <span className="logo-text">Yale Club Badminton Menu</span>
+            </Link>
+          </SheetTitle>
         </SheetHeader>
       </SheetContent>
     </Sheet>

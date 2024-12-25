@@ -18,10 +18,10 @@ export function Header() {
           <div className="logo-img" />
           <span className="logo-text">Yale Badminton</span>
         </Link>
-        <div className="navbar-left">
+        <div className="navbar-middle">
           <NavigationMenu className="nav-root">
             <NavigationMenuList className="nav-list">
-              {["Home", "Team", "Gallery", "FAQs"].map((item, idx) => (
+              {["Home", "Team", "Gallery", "FAQ"].map((item, idx) => (
                 <NavigationMenuItem key={idx}>
                   <Link
                     to={item === "Home" ? "/" : `/${item.toLowerCase()}`}

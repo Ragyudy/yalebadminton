@@ -2,6 +2,9 @@ import { Home } from "./components/Home";
 import { useEffect } from "react";
 import { Header } from "./components/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Faq } from "./components/Faq";
+import { Gallery } from "./components/Gallery";
+import { MasonryGrid } from "./components/MasonryGrid";
 
 function App() {
   useEffect(() => {
@@ -29,11 +32,79 @@ function App() {
     };
   }, []);
 
+  const galleries = {
+    "2024-25/fall-tournament": {
+      title: "Fall 2024 Tournament",
+      date: "11/1/24 - 11/3/24",
+      images: [
+        { path: "/src/assets/img/gallery/2024-25/fall-tournament/1.jpg" },
+        { path: "/src/assets/img/gallery/2024-25/fall-tournament/2.jpg" },
+        { path: "/src/assets/img/gallery/2024-25/fall-tournament/3.jpg" },
+      ],
+    },
+    "2023-24/social-events": {
+      title: "Social Events 2023-24",
+      date: "mostly april / may 2024 (end of 2nd sem)",
+      images: [
+        { path: "/src/assets/img/gallery/2023-24/social-events/1.jpg" },
+        { path: "/src/assets/img/gallery/2023-24/social-events/2.jpg" },
+      ],
+    },
+    "2023-24/spring-tournament": {
+      title: "Spring 2024 Tournament",
+      date: "3/29/24 - 3/31/24",
+      images: [
+        { path: "/src/assets/img/gallery/2023-24/spring-tournament/1.jpg" },
+      ],
+    },
+    "2023-24/fall-tournament": {
+      title: "Fall 2023 Tournament",
+      date: "11/3/23 - 11/5/23",
+      images: [
+        { path: "/src/assets/img/gallery/2023-24/fall-tournament/1.jpg" },
+        { path: "/src/assets/img/gallery/2023-24/fall-tournament/2.jpg" },
+        { path: "/src/assets/img/gallery/2023-24/fall-tournament/3.jpg" },
+        { path: "/src/assets/img/gallery/2023-24/fall-tournament/4.jpg" },
+        { path: "/src/assets/img/gallery/2023-24/fall-tournament/5.jpg" },
+        { path: "/src/assets/img/gallery/2023-24/fall-tournament/6.jpg" },
+        { path: "/src/assets/img/gallery/2023-24/fall-tournament/7.jpg" },
+        { path: "/src/assets/img/gallery/2023-24/fall-tournament/8.jpg" },
+        { path: "/src/assets/img/gallery/2023-24/fall-tournament/9.jpg" },
+        { path: "/src/assets/img/gallery/2023-24/fall-tournament/10.jpg" },
+        { path: "/src/assets/img/gallery/2023-24/fall-tournament/11.jpg" },
+      ],
+    },
+    "2022-23/fall-tournament": {
+      title: "Fall 2022 Tournament",
+      date: "11/4/22 - 11/6/22",
+      images: [
+        { path: "/src/assets/img/gallery/2022-23/fall-tournament/1.jpg" },
+        { path: "/src/assets/img/gallery/2022-23/fall-tournament/2.jpg" },
+        { path: "/src/assets/img/gallery/2022-23/fall-tournament/3.jpg" },
+      ],
+    },
+  };
+
   return (
     <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/gallery" element={<Gallery />} />
+        {Object.entries(galleries).map(([path, data]) => (
+          <Route
+            key={path}
+            path={`/gallery/${path}`}
+            element={
+              <MasonryGrid
+                title={data.title}
+                date={data.date}
+                images={data.images}
+              />
+            }
+          />
+        ))}
+        <Route path="/faq" element={<Faq />} />
       </Routes>
     </Router>
   );

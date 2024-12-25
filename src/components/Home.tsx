@@ -1,30 +1,72 @@
+import { motion } from "motion/react";
+
 export function Home() {
+  const textVariants = {
+    hidden: {
+      opacity: 0,
+      filter: "blur(20px)",
+    },
+    visible: {
+      opacity: 1,
+      filter: "blur(0px)",
+    },
+  };
+
   return (
     <div id="/">
       {/* Splash Component */}
       <div className="splash">
         <div className="splash-overlay">
-          <img
+          <motion.img
             src="/favicon-dark.svg"
             alt="Yale Club Badminton Logo"
             className="splash-logo"
+            variants={textVariants}
+            initial="hidden"
+            animate="visible"
+            transition={{
+              duration: 0.4,
+              ease: [0.4, 0, 0.2, 1],
+              delay: 0.2,
+            }}
           />
-          <h1>Yale Club Badminton</h1>
+          <motion.h1
+            variants={textVariants}
+            initial="hidden"
+            animate="visible"
+            transition={{
+              duration: 0.6,
+              ease: [0.4, 0, 0.2, 1],
+              delay: 0.4,
+            }}
+          >
+            Yale Club Badminton
+          </motion.h1>
         </div>
       </div>
 
       {/* About Component */}
-      <div className="about">
+      <motion.div
+        className="about"
+        variants={textVariants}
+        initial="hidden"
+        animate="visible"
+        transition={{
+          duration: 0.6,
+          ease: [0.4, 0, 0.2, 1],
+          delay: 0.6,
+        }}
+      >
         <h2>About Us</h2>
         <p>
           Yale Club Badminton is a student-led organization that fosters
           competitive and recreational badminton. We organize team practices,
           tournaments, and open gym sessions to cater to players of all levels.
         </p>
-      </div>
+      </motion.div>
 
       {/* Club vs Open Gym Component */}
-      <div className="club-vs-open-gym">
+      <div className="club-vs-open-gym" data-aos="fade-up">
         <h2>Club Badminton vs Open Gym Badminton</h2>
         <div className="comparison">
           <div className="comparison-item">
