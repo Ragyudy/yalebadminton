@@ -7,6 +7,7 @@ import { Gallery } from "./components/Gallery";
 import { MasonryGrid } from "./components/MasonryGrid";
 import { ComingSoon } from "./components/ComingSoon";
 import { Footer } from "./components/Footer";
+import { importImages } from "./utils/importImages";
 
 function App() {
   useEffect(() => {
@@ -112,13 +113,16 @@ function App() {
     },
   };
 
+  const images = importImages();
+  const thumbnails = images["thumbnails"];
+
   return (
     <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/team" element={<ComingSoon />} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/gallery" element={<Gallery thumbnails={thumbnails} />} />
         {Object.entries(galleries).map(([path, data]) => (
           <Route
             key={path}
