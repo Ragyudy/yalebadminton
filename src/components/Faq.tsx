@@ -1,7 +1,7 @@
 const faqData = [
   {
     id: 1,
-    question: "Where do we practice?",
+    question: "Where do you practice?",
     answer:
       "Our practices are held on the 8th floor of the Payne Whitney Gymnasium (PWG).",
   },
@@ -13,15 +13,20 @@ const faqData = [
   },
   {
     id: 3,
-    question: "What equipment do I need (for tryouts)? ",
+    question: "What tournaments do you participate in?",
     answer:
-      "Bring a racket (if you have), sneakers, and water. If you don't have your own racket, our members are usually kind enough to lend their own. If you have a member's racket, please remember to treat it with care and respect as they can cost anywhere from $120-$220 😩 💸. We provide shuttlecocks.",
+      "We participate in the Eastern Collegiate Team Badminton Championships.",
   },
   {
     id: 4,
-    question: "Can I join as a beginner?",
+    question: "What equipment do I need for tryouts? ",
     answer:
-      "It doesn't hurt to try out, but we prioritize experienced players due to limited space and resources. We recommend playing in open gym to improve your skills before trying out!",
+      "Bring a racket, sneakers or badminton shoes, and water (stay hydrated!!). We provide shuttlecocks. If you don't have your own racket, our members are usually kind enough to lend their own. If you have a member's racket, please remember to treat it with care and respect as they can cost anywhere from $120-$220 😩 💸. ",
+  },
+  {
+    id: 5,
+    question: "When are you going to post another popping instagram reel?",
+    answer: "Soon...very soon 😏 stay tuned",
   },
 ];
 
