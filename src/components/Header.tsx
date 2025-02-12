@@ -59,9 +59,6 @@ export function Header() {
                         <li key={idx}>
                           <Link to={item.to} className="dropdown-link">
                             <div className="dropdown-heading">{item.label}</div>
-                            {/* <div className="dropdown-text">
-                            {item.description}
-                          </div> */}
                           </Link>
                         </li>
                       ))}

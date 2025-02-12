@@ -8,6 +8,7 @@ import { MasonryGrid } from "./components/MasonryGrid";
 import { ComingSoon } from "./components/ComingSoon";
 import { Footer } from "./components/Footer";
 import { importImages } from "./utils/importImages";
+import TeamPage from "./components/TeamPage";
 
 function App() {
   useEffect(() => {
@@ -46,7 +47,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/team" element={<ComingSoon />} />
+        <Route path="/team" element={<TeamPage />} />
         <Route path="/gallery" element={<Gallery thumbnails={thumbnails} />} />
         {nonThumbnailCategories.flatMap(([category, subcategories]) =>
           Object.entries(subcategories).map(([subcategory, images]) => (

@@ -2,7 +2,7 @@ import { Instagram, Facebook, TwitterX, Youtube } from "react-bootstrap-icons";
 
 export function Footer() {
   return (
-    <footer className="bg-gray-100 text-gray-800 py-6 px-4 border-t border-gray-300">
+    <footer className="bg-gray-100 text-gray-800 py-2 border-t border-gray-300">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center py-5">
         {/* Logo and Copyright */}
         <div className="flex items-center gap-2">
