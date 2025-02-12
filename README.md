@@ -5,7 +5,6 @@
 todo:
 
 - finish mobile menu
-- make team page
 - make archive pages
 - update home page
 - dark mode
