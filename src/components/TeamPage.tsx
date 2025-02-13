@@ -1,5 +1,9 @@
 import TeamMember from "./TeamMember";
 import blank from "../assets/img/team/blank.jpg";
+import grady from "../assets/img/team/grady.jpg";
+import ella from "../assets/img/team/ella.jpg";
+import shuangjia from "../assets/img/team/shuangjia.jpg";
+import songtao from "../assets/img/team/songtao.jpg";
 
 export function TeamPage() {
   const teamMembers = [
@@ -11,12 +15,12 @@ export function TeamPage() {
     {
       name: "Ella Xu",
       collegeYear: "Captain, TD '26",
-      imageSrc: blank,
+      imageSrc: ella,
     },
     {
       name: "Grady Yu",
       collegeYear: "Captain, SM '27",
-      imageSrc: blank,
+      imageSrc: grady,
     },
     {
       name: "Ellen Zhang",
@@ -46,7 +50,7 @@ export function TeamPage() {
     {
       name: "Shuangjia Lu",
       collegeYear: "Graduate Student",
-      imageSrc: blank,
+      imageSrc: shuangjia,
     },
     {
       name: "Joseph Zhang",
@@ -102,6 +106,11 @@ export function TeamPage() {
       name: "Kaiyuan Tang",
       collegeYear: "Graduate Student",
       imageSrc: blank,
+    },
+    {
+      name: "Songtao Huang",
+      collegeYear: "Graduate Student",
+      imageSrc: songtao,
     },
     {
       name: "Ken Jung",
