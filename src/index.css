@@ -24,6 +24,11 @@ h2 {
   font-style: normal;
 }
 
+a {
+  color: #286dc0;
+  text-decoration: none;
+}
+
 /* ------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------- NAV ------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------- */
@@ -246,107 +251,113 @@ h2 {
 /* ------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------- HOME ------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------- */
+.home-container {
+  max-width: 1200px;
+  padding: 150px 20px;
+  margin: 0 auto;
+}
+
 .splash {
-  height: 70vh;
-  background-color: #00356b;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-
-.splash-overlay {
-  padding-top: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-.splash-logo {
-  width: 150px;
-  margin-bottom: 1rem;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
-}
-
-.splash-overlay h1 {
-  font-family: "komet-sc", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 3rem;
-  margin: 0;
-  color: #f9f9f9;
-}
-
-@media (max-width: 768px) {
-  .splash-overlay h1 {
-    font-size: 2.25rem;
-  }
-}
-
-.about {
-  max-width: 1000px;
-  text-align: center;
+  width: 85%;
   margin: 0 auto;
-  padding: 40px 20px;
 }
 
-.about h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+.splash-left {
+  max-width: 75%;
+  line-height: 1.75;
+  font-size: 1.2rem;
 }
 
-.about p {
-  margin: 0 auto;
-  text-align: left;
-  font-size: 1rem;
-  line-height: 1.8;
-}
-
-.about a {
-  color: #286dc0;
-  text-decoration: none;
-}
-
-.about a:hover {
-  text-decoration: underline;
-}
-
-.club-vs-open-gym {
-  text-align: center;
-  margin: 40px 0;
-  padding: 20px;
-}
-
-.club-vs-open-gym h2 {
-  font-size: 2rem;
+.splash-left h1 {
+  font-size: 4rem;
+  color: #00356b;
+  line-height: 1.2;
   margin-bottom: 20px;
 }
 
-.comparison {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+.splash-logo {
+  width: 145px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
 }
 
-.comparison-item {
-  flex: 1;
-  max-width: 400px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background: #f9f9f9;
+.home-links {
+  padding-top: 20px;
+}
+
+.section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00356b;
+  margin-bottom: 40px;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-align: left;
 }
 
-.comparison-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+.img-left .section-image {
+  order: -1;
 }
 
-.comparison-item p {
-  font-size: 1rem;
-  color: #555;
+.img-wrapper {
+  width: 45%;
+  max-width: 500px;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-text {
+  width: 50%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 1100px) {
+  .home-container {
+    padding: 100px 20px;
+  }
+  .splash {
+    flex-direction: column;
+    text-align: center;
+  }
+  .splash-logo,
+  .home-links {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .section-image {
+    width: 100%;
+  }
+  .section-text {
+    width: 100%;
+  }
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
