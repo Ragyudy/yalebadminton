@@ -4,13 +4,18 @@ import grady from "../assets/img/team/grady.jpg";
 import ella from "../assets/img/team/ella.jpg";
 import shuangjia from "../assets/img/team/shuangjia.jpg";
 import songtao from "../assets/img/team/songtao.jpg";
+import vanessa from "../assets/img/team/vanessa.jpg";
+import sean from "../assets/img/team/sean.jpg";
+import steven from "../assets/img/team/steven.jpg";
+import aadi from "../assets/img/team/aadi.jpg";
+import ellen from "../assets/img/team/ellen.jpg";
 
 export function TeamPage() {
   const teamMembers = [
     {
       name: "Aadi Krishna",
       collegeYear: "Captain, GH '26",
-      imageSrc: blank,
+      imageSrc: aadi,
     },
     {
       name: "Ella Xu",
@@ -25,7 +30,7 @@ export function TeamPage() {
     {
       name: "Ellen Zhang",
       collegeYear: "GH '26",
-      imageSrc: blank,
+      imageSrc: ellen,
     },
     {
       name: "Ed Joo",
@@ -75,7 +80,7 @@ export function TeamPage() {
     {
       name: "Sean Chang",
       collegeYear: "BF '27",
-      imageSrc: blank,
+      imageSrc: sean,
     },
     {
       name: "Tom Hong",
@@ -108,6 +113,11 @@ export function TeamPage() {
       imageSrc: blank,
     },
     {
+      name: "Vanessa Zarm",
+      collegeYear: "Graduate Student",
+      imageSrc: vanessa,
+    },
+    {
       name: "Songtao Huang",
       collegeYear: "Graduate Student",
       imageSrc: songtao,
@@ -135,7 +145,7 @@ export function TeamPage() {
     {
       name: "Steven Zhang",
       collegeYear: "BR '28",
-      imageSrc: blank,
+      imageSrc: steven,
     },
     {
       name: "Miyabi Shinki",
