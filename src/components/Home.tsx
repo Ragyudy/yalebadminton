@@ -14,7 +14,6 @@ export function Home() {
 
   return (
     <div id="/">
-      {/* Splash Component */}
       <div className="splash">
         <div className="splash-overlay">
           <motion.img
@@ -45,7 +44,6 @@ export function Home() {
         </div>
       </div>
 
-      {/* About Component */}
       <motion.div
         className="about"
         variants={textVariants}
@@ -63,14 +61,15 @@ export function Home() {
           participate in away tournaments every semester and we recruit new
           players at the start of each semester. If you’re a new student
           interested in representing Yale Badminton, please reach out to{" "}
-          <a href="mailto:aadi.krishna@yale.edu">aadi.krishna@yale.edu</a>,{" "}
-          <a href="mailto:ella.xu@yale.edu">ella.xu@yale.edu</a>, and{" "}
-          <a href="mailto:grady.yu@yale.edu">grady.yu@yale.edu</a>. We’d love to
-          talk to you :D!
+          <a href="mailto:grady.yu@yale.edu">grady.yu@yale.edu</a>,{" "}
+          <a href="mailto:jack.yin@yale.edu">jack.yin@yale.edu</a>, and{" "}
+          <a href="mailto:steven.zhang.shz3@yale.edu">
+            steven.zhang.shz3@yale.edu
+          </a>
+          . We’d love to talk to you :D!
         </p>
       </motion.div>
 
-      {/* Club vs Open Gym Component */}
       <div className="club-vs-open-gym" data-aos="fade-up">
         <h2>Club Badminton vs Open Gym Badminton</h2>
         <div className="comparison">

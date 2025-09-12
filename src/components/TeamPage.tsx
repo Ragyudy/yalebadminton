@@ -9,28 +9,39 @@ import sean from "../assets/img/team/sean.jpg";
 import steven from "../assets/img/team/steven.jpg";
 import aadi from "../assets/img/team/aadi.jpg";
 import ellen from "../assets/img/team/ellen.jpg";
+import jack from "../assets/img/team/jack.jpg";
 
 export function TeamPage() {
   const teamMembers = [
-    {
-      name: "Aadi Krishna",
-      collegeYear: "Captain, GH '26",
-      imageSrc: aadi,
-    },
-    {
-      name: "Ella Xu",
-      collegeYear: "Captain, TD '26",
-      imageSrc: ella,
-    },
     {
       name: "Grady Yu",
       collegeYear: "Captain, SM '27",
       imageSrc: grady,
     },
     {
+      name: "Jack Yin",
+      collegeYear: "Captain, BF '28",
+      imageSrc: jack,
+    },
+    {
+      name: "Steven Zhang",
+      collegeYear: "Captain, BR '28",
+      imageSrc: steven,
+    },
+    {
+      name: "Ella Xu",
+      collegeYear: "TD '26",
+      imageSrc: ella,
+    },
+    {
       name: "Ellen Zhang",
       collegeYear: "GH '26",
       imageSrc: ellen,
+    },
+    {
+      name: "Aadi Krishna",
+      collegeYear: "GH '26",
+      imageSrc: aadi,
     },
     {
       name: "Ed Joo",
@@ -93,11 +104,6 @@ export function TeamPage() {
       imageSrc: blank,
     },
     {
-      name: "Jack Yin",
-      collegeYear: "BF '28",
-      imageSrc: blank,
-    },
-    {
       name: "Christopher Kim",
       collegeYear: "BF '27",
       imageSrc: blank,
@@ -141,11 +147,6 @@ export function TeamPage() {
       name: "Evan Yip",
       collegeYear: "BR '28",
       imageSrc: blank,
-    },
-    {
-      name: "Steven Zhang",
-      collegeYear: "BR '28",
-      imageSrc: steven,
     },
     {
       name: "Miyabi Shinki",

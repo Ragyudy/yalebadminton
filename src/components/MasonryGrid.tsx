@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { LazyImage } from "./LazyImage";
 
 interface ImageData {
@@ -17,6 +17,33 @@ export function MasonryGrid({ title, date, images }: MasonryGridProps) {
 
   const openImage = (image: ImageData) => setSelectedImage(image);
   const closeImage = () => setSelectedImage(null);
+
+  // Keyboard navigation for modal
+  // Only active when modal is open
+  useEffect(() => {
+    if (!selectedImage) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "ArrowLeft") {
+        const currentIndex = images.findIndex(
+          (img) => img.path === selectedImage.path
+        );
+        const prevIndex = (currentIndex - 1 + images.length) % images.length;
+        setSelectedImage(images[prevIndex]);
+      } else if (e.key === "ArrowRight") {
+        const currentIndex = images.findIndex(
+          (img) => img.path === selectedImage.path
+        );
+        const nextIndex = (currentIndex + 1) % images.length;
+        setSelectedImage(images[nextIndex]);
+      } else if (e.key === "Escape") {
+        closeImage();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [selectedImage, images]);
 
   return (
     <>
