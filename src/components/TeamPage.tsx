@@ -4,12 +4,19 @@ import grady from "../assets/img/team/grady.jpg";
 import ella from "../assets/img/team/ella.jpg";
 import shuangjia from "../assets/img/team/shuangjia.jpg";
 import songtao from "../assets/img/team/songtao.jpg";
-import vanessa from "../assets/img/team/vanessa.jpg";
 import sean from "../assets/img/team/sean.jpg";
 import steven from "../assets/img/team/steven.jpg";
 import aadi from "../assets/img/team/aadi.jpg";
 import ellen from "../assets/img/team/ellen.jpg";
 import jack from "../assets/img/team/jack.jpg";
+import angie from "../assets/img/team/angie.jpg";
+import emily from "../assets/img/team/emily.jpg";
+import tom from "../assets/img/team/tom.jpg";
+import zhaoyang from "../assets/img/team/zhaoyang.jpg";
+import miyabi from "../assets/img/team/miyabi.jpg";
+import ken from "../assets/img/team/ken.jpg";
+import jenny from "../assets/img/team/jenny.jpg";
+import chris from "../assets/img/team/chris.jpg";
 
 export function TeamPage() {
   const teamMembers = [
@@ -29,62 +36,107 @@ export function TeamPage() {
       imageSrc: steven,
     },
     {
+      name: "Aadi Krishna",
+      collegeYear: "Former Captain, GH '26",
+      imageSrc: aadi,
+    },
+    {
       name: "Ella Xu",
-      collegeYear: "TD '26",
+      collegeYear: "Former Captain, TD '26",
       imageSrc: ella,
     },
     {
       name: "Ellen Zhang",
-      collegeYear: "GH '26",
+      collegeYear: "Former Captain, GH '26",
       imageSrc: ellen,
     },
     {
-      name: "Aadi Krishna",
-      collegeYear: "GH '26",
-      imageSrc: aadi,
+      name: "Angie Liu",
+      collegeYear: "Social Media, SY '29",
+      imageSrc: angie,
     },
     {
-      name: "Ed Joo",
-      collegeYear: "Graduate Student",
-      imageSrc: blank,
-    },
-    {
-      name: "Katherine Chou",
-      collegeYear: "SM '25",
-      imageSrc: blank,
-    },
-    {
-      name: "Zhaoyang Zhang",
-      collegeYear: "Graduate Student",
-      imageSrc: blank,
-    },
-    {
-      name: "Derek Dong",
-      collegeYear: "SY '25",
-      imageSrc: blank,
-    },
-    {
-      name: "Shuangjia Lu",
-      collegeYear: "Graduate Student",
-      imageSrc: shuangjia,
-    },
-    {
-      name: "Joseph Zhang",
-      collegeYear: "BF '25",
-      imageSrc: blank,
-    },
-    {
-      name: "Pei-Kai Tsai",
-      collegeYear: "Graduate Student",
-      imageSrc: blank,
-    },
-    {
-      name: "Daniel Zhang",
-      collegeYear: "MY '26",
+      name: "Annie Geng",
+      collegeYear: "JE '28",
       imageSrc: blank,
     },
     {
       name: "Bryan Wong",
+      collegeYear: "Graduate Student",
+      imageSrc: blank,
+    },
+    {
+      name: "Christopher Kim",
+      collegeYear: "BF '27",
+      imageSrc: chris,
+    },
+    {
+      name: "Emily Chen",
+      collegeYear: "GH '29",
+      imageSrc: emily,
+    },
+    {
+      name: "Evan Yip",
+      collegeYear: "BR '28",
+      imageSrc: blank,
+    },
+    {
+      name: "Flora Li",
+      collegeYear: "TD '29",
+      imageSrc: blank,
+    },
+    {
+      name: "Gavin Wong",
+      collegeYear: "SY '28",
+      imageSrc: blank,
+    },
+    {
+      name: "Harrison Souchereau",
+      collegeYear: "Graduate Student",
+      imageSrc: blank,
+    },
+    {
+      name: "Jenny Lu",
+      collegeYear: "Graduate Student",
+      imageSrc: jenny,
+    },
+    {
+      name: "Kai Omidyar",
+      collegeYear: "MC '28",
+      imageSrc: blank,
+    },
+    {
+      name: "Kaiyuan Tang",
+      collegeYear: "Graduate Student",
+      imageSrc: blank,
+    },
+    {
+      name: "Ken Jung",
+      collegeYear: "Graduate Student",
+      imageSrc: ken,
+    },
+    {
+      name: "Matthew Li",
+      collegeYear: "PM '29",
+      imageSrc: blank,
+    },
+    {
+      name: "Miyabi Shinki",
+      collegeYear: "BK '28",
+      imageSrc: miyabi,
+    },
+    {
+      name: "Phillip Kang",
+      collegeYear: "Graduate Student",
+      imageSrc: blank,
+    },
+    {
+      name: "Pierce Nguyen",
+      collegeYear: "PC '29",
+      imageSrc: blank,
+    },
+    {
+      name: "Ruyi Liu",
       collegeYear: "Graduate Student",
       imageSrc: blank,
     },
@@ -94,34 +146,14 @@ export function TeamPage() {
       imageSrc: sean,
     },
     {
-      name: "Tom Hong",
+      name: "Shuangjia Lu",
       collegeYear: "Graduate Student",
-      imageSrc: blank,
+      imageSrc: shuangjia,
     },
     {
-      name: "Alicia Zheng",
+      name: "Shuhao Song",
       collegeYear: "Graduate Student",
       imageSrc: blank,
-    },
-    {
-      name: "Christopher Kim",
-      collegeYear: "BF '27",
-      imageSrc: blank,
-    },
-    {
-      name: "Yutong Li",
-      collegeYear: "Graduate Student",
-      imageSrc: blank,
-    },
-    {
-      name: "Kaiyuan Tang",
-      collegeYear: "Graduate Student",
-      imageSrc: blank,
-    },
-    {
-      name: "Vanessa Zarm",
-      collegeYear: "Graduate Student",
-      imageSrc: vanessa,
     },
     {
       name: "Songtao Huang",
@@ -129,45 +161,83 @@ export function TeamPage() {
       imageSrc: songtao,
     },
     {
-      name: "Ken Jung",
-      collegeYear: "Graduate Student",
-      imageSrc: blank,
-    },
-    {
-      name: "Annie Chen",
-      collegeYear: "Graduate Student",
-      imageSrc: blank,
-    },
-    {
-      name: "Aviral Jain",
-      collegeYear: "DP '27",
-      imageSrc: blank,
-    },
-    {
-      name: "Evan Yip",
-      collegeYear: "BR '28",
-      imageSrc: blank,
-    },
-    {
-      name: "Miyabi Shinki",
-      collegeYear: "BK '28",
-      imageSrc: blank,
-    },
-    {
-      name: "Gavin Wong",
-      collegeYear: "SY '28",
-      imageSrc: blank,
-    },
-    {
       name: "Tina Wang",
       collegeYear: "BR '28",
       imageSrc: blank,
     },
     {
-      name: "Harrison Souchereau",
+      name: "Tom Hong",
       collegeYear: "Graduate Student",
+      imageSrc: tom,
+    },
+    {
+      name: "William Zhu",
+      collegeYear: "ES '29",
       imageSrc: blank,
     },
+    {
+      name: "Zhaoyang Zhang",
+      collegeYear: "Graduate Student",
+      imageSrc: zhaoyang,
+    },
+
+    // Add these people to past teams
+    // {
+    //   name: "Annie Chen",
+    //   collegeYear: "Graduate Student",
+    //   imageSrc: blank,
+    // },
+    // {
+    //   name: "Aviral Jain",
+    //   collegeYear: "DP '27",
+    //   imageSrc: blank,
+    // },
+    // {
+    //   name: "Daniel Zhang",
+    //   collegeYear: "MY '26",
+    //   imageSrc: blank,
+    // },
+
+    // {
+    //   name: "Pei-Kai Tsai",
+    //   collegeYear: "Graduate Student",
+    //   imageSrc: blank,
+    // },
+    // {
+    //   name: "Alicia Zheng",
+    //   collegeYear: "Graduate Student",
+    //   imageSrc: blank,
+    // },
+    // {
+    //   name: "Vanessa Zarm",
+    //   collegeYear: "Graduate Student",
+    //   imageSrc: vanessa,
+    // },
+    // {
+    //   name: "Ed Joo",
+    //   collegeYear: "Graduate Student",
+    //   imageSrc: blank,
+    // },
+    // {
+    //   name: "Katherine Chou",
+    //   collegeYear: "SM '25",
+    //   imageSrc: blank,
+    // },
+    // {
+    //   name: "Derek Dong",
+    //   collegeYear: "SY '25",
+    //   imageSrc: blank,
+    // },
+    // {
+    //   name: "Joseph Zhang",
+    //   collegeYear: "BF '25",
+    //   imageSrc: blank,
+    // },
+    // {
+    //   name: "Yutong Li",
+    //   collegeYear: "Graduate Student",
+    //   imageSrc: blank,
+    // },
   ];
 
   return (
