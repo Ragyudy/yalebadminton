@@ -2,12 +2,11 @@ import { Link } from "react-router-dom";
 import {
   NavigationMenu,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuContent,
   NavigationMenuItem,
 } from "@radix-ui/react-navigation-menu";
-import { CaretDownIcon } from "@radix-ui/react-icons";
-import { ThemeToggle } from "./ThemeToggle";
+// import { NavigationMenuTrigger, NavigationMenuContent } from "@radix-ui/react-navigation-menu";
+// import { CaretDownIcon } from "@radix-ui/react-icons";
+// import { ThemeToggle } from "./ThemeToggle";
 import { MobileMenu } from "./MobileMenu";
 
 export function Header() {
@@ -18,25 +17,23 @@ export function Header() {
           <div className="logo-img" />
           <span className="logo-text">Yale Badminton</span>
         </Link>
-        <div className="navbar-middle">
-          <NavigationMenu className="nav-root">
-            <NavigationMenuList className="nav-list">
-              {["Home", "Team", "Gallery", "FAQ"].map((item, idx) => (
-                <NavigationMenuItem key={idx}>
-                  <Link
-                    to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                    className="nav-link"
-                  >
-                    {item}
-                  </Link>
-                </NavigationMenuItem>
-              ))}
-            </NavigationMenuList>
-          </NavigationMenu>
-        </div>
         <div className="navbar-right">
           <div className="navbar-right-big-screen">
             <NavigationMenu className="nav-root">
+              <NavigationMenuList className="nav-list">
+                {["Home", "Team", "Gallery", "FAQ"].map((item, idx) => (
+                  <NavigationMenuItem key={idx}>
+                    <Link
+                      to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+                      className="nav-link"
+                    >
+                      {item}
+                    </Link>
+                  </NavigationMenuItem>
+                ))}
+              </NavigationMenuList>
+            </NavigationMenu>
+            {/* <NavigationMenu className="nav-root">
               <NavigationMenuList className="nav-list">
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="nav-trigger">
@@ -52,7 +49,7 @@ export function Header() {
                         },
                         {
                           label: "Constitution",
-                          description: "Read the club’s official constitution.",
+                          description: "Read the club's official constitution.",
                           to: "/constitution",
                         },
                       ].map((item, idx) => (
@@ -66,8 +63,8 @@ export function Header() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
               </NavigationMenuList>
-            </NavigationMenu>
-            <ThemeToggle />
+            </NavigationMenu> */}
+            {/* <ThemeToggle /> */}
           </div>
           <div className="mobile-menu">
             <MobileMenu />

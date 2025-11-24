@@ -1,9 +1,16 @@
-import { Instagram, Facebook, TwitterX, Youtube } from "react-bootstrap-icons";
+import { InstagramLogoIcon, EnvelopeClosedIcon } from "@radix-ui/react-icons";
 
 export function Footer() {
+  const captainsEmails = [
+    "grady.yu@yale.edu",
+    "jack.yin@yale.edu",
+    "steven.zhang.shz3@yale.edu",
+  ];
+  const emailLink = `mailto:${captainsEmails.join(",")}`;
+
   return (
-    <footer className="bg-gray-100 text-gray-800 py-2 border-t border-gray-300">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center py-5">
+    <footer className=" text-gray-800 py-2">
+      <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row justify-between items-center py-5 px-4">
         <div className="flex items-center gap-2">
           <img
             src="/favicon-light.svg"
@@ -18,34 +25,17 @@ export function Footer() {
             href="https://www.instagram.com/yalebadminton/"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-gray-800 hover:text-blue-600"
           >
-            <Instagram size={24} />
+            <InstagramLogoIcon className="w-5 h-5" />
           </a>
-          <a
-            href="https://www.facebook.com/yalebadmintonclub/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Facebook size={24} />
-          </a>
-          <a
-            href="https://twitter.com/yalebc"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <TwitterX size={24} />
-          </a>
-          <a
-            href="https://www.youtube.com/user/yalebadmintonclub"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Youtube size={24} />
+          <a href={emailLink} className="text-gray-800 hover:text-blue-600">
+            <EnvelopeClosedIcon className="w-5 h-5" />
           </a>
         </div>
       </div>
-      <div className="text-sm text-gray-600 px-4 pb-4">
-        “Yale” and “Yale University” are registered trademarks of Yale
+      <div className="text-[10px] text-gray-400 max-w-[1000px] mx-auto px-4 pb-4">
+        "Yale" and "Yale University" are registered trademarks of Yale
         University. This website is a student-run website and is maintained,
         hosted, and operated independently of Yale University. The activities on
         this website are not supervised or endorsed by Yale, and information
